@@ -1,0 +1,55 @@
+.contenedorImagenPrincipal{
+    background-color:#E6E6E6;
+    text-align: center;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contenedorTituloSeccionPrincipal{
+    text-align: center;
+    background-color: #C4C4C4;
+    font-size: 35px;
+    letter-spacing: 10px;
+    color: #005677; 
+    line-height: 60px;
+    margin-bottom: 100px;   
+}
+
+.fondo{
+    background-color: white; 
+}
+
+
+.contenedorTituloSecundario{
+    color: #005677; 
+    background-color: #C4C4C4;
+    line-height: 30px;   
+}
+
+span {
+    font-weight: bold;
+}
+
+
+.datos{
+    font-style: italic;
+}
+
+.contenedorSeccion {
+
+}    
+
+footer {
+    background: #005677;
+    color: white;
+    text-align: center;
+    font-size:  20px;
+    line-height: 30px;
+    padding: 5px;
+
+}
+.imagenFooter{ 
+    width: 20px;
+}
