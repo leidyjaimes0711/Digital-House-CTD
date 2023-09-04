@@ -1,0 +1,76 @@
+/* HEADER*/
+.banner{
+    background-image: url(../img/coding.jpg);
+    background-size: cover;
+}
+h1{
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+nav{
+    background-color: rgba(2, 153, 2, 0.599);
+    color: white;
+    font-size: medium;
+    width: 100%;
+    padding: 10px;
+    
+}
+.contenedorOpciones{
+    text-align: center;
+}
+span{
+    margin: 20px;
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+nav a:hover{
+    background-color: rgb(0, 255, 85);
+}
+/*________________________________________________________________________________*/
+/*MAIN*/
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: black;
+}
+.contenedorImagen{
+    display: block;
+    text-align: center;
+    padding: 40px;
+}
+img {
+    width: 100px;
+}
+
+main p {
+    color: white;
+    text-align: justify;
+}
+/*________________________________________________________________________________*/
+/*FOOTER*/
+.footer{
+    color: black;
+    background-color: white;
+    font-size: small;
+    text-align: center;
+    line-height: 30px;
+
+}
+
+footer img{
+    padding: 2px;
+}
+.imagenFooter{
+    width: 20px;
+    padding-top: 5px;
+}

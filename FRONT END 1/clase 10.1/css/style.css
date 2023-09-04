@@ -1,0 +1,173 @@
+/*Para importar la fuente */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*Sección para crear variables */
+:root{
+  --cbg-primary:#00669f;
+  --text-color-primary:#ffffff;
+  --disc-bg:#d1891c;
+  --card-cbg:#f3f3f3; 
+  --card-shadow:darkgray;
+}
+html{
+  font-size: 62.5%; /* Para que 1 rem = 10px */
+}
+body {
+  font-family: "Roboto";
+  font-weight: 400;
+}
+.header .discount-bar {
+  background-color: var(--disc-bg);/*Primera llamada a una variable de color*/
+  font-size: 3rem; /* Fuente de 30px */
+  padding: 2rem;
+}
+.header .title {
+  background-color:var(--cbg-primary);
+  color: var(--text-color-primary);
+  font-size: 5rem;
+  font-weight: 400;
+  padding: 1rem;
+  text-align: center;
+}
+header {
+  margin-bottom: 3rem;
+}    
+main{
+  height: auto;
+  width: 100%; /* Para que el main use el 100% del ancho de la pantalla (viewport) */  
+}    
+/* Contenedor de las tarjetas */ 
+.section-cards {
+  display: flex;
+  flex-direction: column; /* Alineación en columna, Mobile First */
+  justify-content: center; /* Alinear items en el centro */
+  margin: 2rem auto;
+  row-gap: 5rem;  /* Espaciado entre una línea y la siguiente entre elementos flex (flex items) */
+  width: 330px; /* Ancho fijo, en base a algunos smartphones */
+}
+/* Tarjeta */
+.card {  
+  background-color: var(--card-cbg);
+  border-top-left-radius: 3rem; /*Para borde redondeado izquierdo */
+  border-top-right-radius: 3rem; /*Para borde redondeado derecho */
+  box-shadow: 0px 0.4rem 0.5rem var(--card-shadow); /* Para aplicar la sombra al pie de la tarjeta */
+  margin: 2rem 0;  
+  width: 100%;
+}
+
+/* Para la imágen de fondo dentro de la card */
+.card-bg {  
+  height: 25vh; /* Ocupa un 25% de alto del viewport/pantalla */
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  position: relative;
+  width: 100%;
+}
+
+/*Para el emoji corazón */
+.card-bg img {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  left: 3rem;
+  top: 3rem;
+}
+/* Para el fondo de la card Batman*/
+.batman {
+  background-image: url("../img/batman-bg.png");
+}
+/* Para el fondo de la card Wonder Woman*/
+.wonderwoman {
+  background-image: url("../img/wonder-bg.png");
+}
+/* Para el fondo de la card Superman */
+.superman {
+  background-image: url("../img/superman-bg.png");
+}
+/* Para el fondo de la card Harley Quinn */
+.harley-card {
+  background-image: url("../img/harley-bg.png");
+}
+/* Para el contenido de la tarjeta */
+.card-content {
+  display: flex;
+  flex-direction: column;    
+  margin-bottom: 3rem;
+  margin-top: 4rem;  
+  position: relative; /* Para posicionar la foto de los heroes */
+  padding: 0 2rem;
+  text-align: center;
+  background-color: var(--card-cbg);
+  
+}
+/* Para las fotos de los personajes */
+.card-content img {  
+  border-radius: 50%; /* Para redondear la foto de los heroes valor en porcentaje */
+  height: auto;
+  margin: 3rem auto;  
+  margin-top:-32%; /* Para que se sobreponga sobre la foto de fondo */
+  width: 40%;  
+}
+
+.info h3 {
+  font-weight: bold;
+  font-size: 3.6rem;
+}
+.info p {
+  font-size: 2.4rem;
+  margin: 2.5rem auto;
+  text-align: justify;
+}
+.info button {
+  color: var(--card-cbg);
+  background-color: var(--cbg-primary);
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 0.7rem;
+  margin: 3rem 0;
+}
+footer {
+  background-color: var(--cbg-primary);
+  color: var(--text-color-primary);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+  padding: 2rem;
+}
+
+footer p{  
+  font-size: 3rem;
+  padding: 2rem;    
+  text-align: center;        
+}
+footer .github{
+  display: inline-block;
+  height: 4rem;
+  margin: 1rem auto;  
+  text-align: right;
+}
+/* De aquí en adelante reglas para pantallas más grandes */
+/* Mediaqueries o Brakpoint para pantallas desde 400px de ancho o mayor */
+@media screen and (min-width: 400px){  
+  .section-cards{
+    display: flex;
+    flex-direction: row; /* Cambio a disposición en fila */
+    flex-wrap: wrap; /* Para que se respete el tamaño de cada card */
+    /* Y también para que agregue los elementos siguientes en una nueva fila */
+    margin: 0 auto;        
+    width: 100%;
+  }
+  .card{
+    margin: 0 auto;
+    width: 360px; /* Un tamaño fijo de ancho para cada card */
+  }  
+}; 
